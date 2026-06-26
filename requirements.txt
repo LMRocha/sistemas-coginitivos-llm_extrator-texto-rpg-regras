@@ -1,0 +1,12 @@
+transformers
+pypdf
+python-dotenv
+chromadb
+sentence-transformers
+langchain-text-splitters
+langchain
+tqdm
+pyyaml
+torch
+torchvision
+torchaudio

@@ -1,0 +1,194 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+.eggs/
+parts/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+man/
+include/
+share/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+.coverage.*
+.coveragerc
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+*.pyi
+*.mypy_cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Virtual Environment
+venv/
+.virtualenv/
+.venv/
+virtualenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-*
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Model Files (large)
+models/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+*.ckpt
+*.pkl
+*.pickle
+
+# Vector Database
+data/chroma_db/
+data/vectordb/
+data/faiss_index/
+*.faiss
+*.index
+chroma/
+vectorstore/
+
+# PDF Data (original files might be copyrighted)
+data/pdfs/*.pdf
+!data/pdfs/.gitkeep
+data/temp/
+data/cache/
+
+# Logs & Temporary Files
+*.log
+logs/
+temp/
+tmp/
+*.tmp
+*.cache
+*.cached
+*.bak
+*.backup
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+.secrets
+secrets.yaml
+config/secrets.yaml
+*.key
+*.pem
+*.crt
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Output Files
+outputs/
+results/
+generated/
+*.csv
+*.xlsx
+*.jsonl
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# FastAPI / Uvicorn
+uvicorn.error
+uvicorn.access
+*.pid
+
+# Docker
+*.dockerignore
+docker-compose.override.yml
+
+# OS
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+Icon?
+.directory
+*.DS_Store
+
+# Backup files
+*.backup
+*.old
+*.orig
+
+# Debugging
+*.prof
+*.lprof
+*.pydevproject
+dump.rdb
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.tmp_coverage
+.coverage.*
+
+# Model checkpoints (if using training)
+checkpoints/
+*.ckpt
+*.h5
+best_model/
+logs/
+
+# Jupyter extensions
+jupyter_notebook_config.py
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Package management
+poetry.lock
+Pipfile.lock
+uv.lock
+
+# Compiled Python
+*.class
+
+# Distribution
+*.whl
+*.tar.gz
+*.tgz

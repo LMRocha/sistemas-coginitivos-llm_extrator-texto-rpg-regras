@@ -1,0 +1,11 @@
+# Directory for raw or processed data (e.g., datasets, images, text files)
+DATA_DIR: "./data/pdfs/"
+
+# Directory where ChromaDB persists vector collections and metadata
+CHROMADB_DIR: "./chromadb"
+
+# Hugging Face model identifier
+MODEL_ID: "Qwen/Qwen2.5-1.5B-Instruct"
+
+# Embedding model
+EMBEDDING_MODEL_ID: "sentence-transformers/all-MiniLM-L6-v2"
