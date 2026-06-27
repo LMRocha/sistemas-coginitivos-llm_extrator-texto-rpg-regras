@@ -1,12 +1,9 @@
 import os
-import shutil
 from pypdf import PdfReader
 from pathlib import Path
-import yaml
 from sentence_transformers import SentenceTransformer
 import chromadb
 from chromadb.config import Settings
-from tqdm import tqdm
 from config_loader import load_config
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from typing import List, Dict
@@ -14,10 +11,6 @@ from typing import List, Dict
 configs = load_config()
 
 def load_pdfs_from_folder() -> list[dict]:
-    """
-    Load and extract text from all PDF files in a folder.
-    Returns a list of dicts: [{"filename": "doc.pdf", "text": "..."}, ...]
-    """
     folder_path = configs.get("DATA_DIR")
     texts = []
     if not os.path.exists(folder_path):
@@ -48,21 +41,7 @@ def chunk_documents(
     chunk_size: int = 500,
     chunk_overlap: int = 50
 ) -> List[Dict[str, str]]:
-    """
-    Split each document's text into overlapping chunks.
 
-    Args:
-        documents: List of dicts from load_pdfs_from_folder(),
-                   each with "filename" and "text".
-        chunk_size: Maximum characters per chunk.
-        chunk_overlap: Number of overlapping characters between chunks.
-
-    Returns:
-        List of dicts, each with:
-            "filename"   : str
-            "chunk"      : str (the text chunk)
-            "chunk_index": int (position of this chunk in its document)
-    """
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
