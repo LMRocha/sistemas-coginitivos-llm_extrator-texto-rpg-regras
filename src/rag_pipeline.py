@@ -126,6 +126,7 @@ def embed_chunks(
     print(f"Added {len(ids)} chunks.")
 
 
+
 if __name__ == "__main__":
     raw_texts = load_pdfs_from_folder()
     print(f"PDFs loaded: {raw_texts}")
